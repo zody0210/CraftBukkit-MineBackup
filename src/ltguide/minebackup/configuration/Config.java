@@ -278,6 +278,10 @@ public class Config extends Configuration {
 		return getBoolean("destination.prepend-world");
 	}
 	
+	public boolean getDestWorldEdit() {
+		return getBoolean("destination.worldedit");
+	}
+	
 	public boolean getBoolean(final Process process, final String key) {
 		return getBoolean(process.getType() + "." + process.getName() + "." + key, false);
 	}
